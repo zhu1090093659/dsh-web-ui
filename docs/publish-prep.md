@@ -87,9 +87,10 @@ npm 侧已发布 @deepseek-ai 核心 SDK 包至 `0.1.0-rc.6`，插件包仍按�
 2. 发布前仍需处理：移除 `private: true`（11 包）；
 3. 按依赖顺序发布（用 **`pnpm publish`**，自动改写 workspace:*）：
    各功能包 > skin-center > web-ui-all；
-4. **外部依赖先行**：web-ui-all 的 dependencies 含 `dsh-better-sidebar`（0.14.0，
-   非本仓库出品，已发布并适配 rc.8 官方 SDK cohort）与 `@mlgbnb/dsh-archive-manager`
-   （1.0.7，社区插件，已发布），其版本必须已在 npm 上可解析，再更新 lockfile；
+4. **外部依赖先行**：web-ui-all 的 dependencies 含 `dsh-better-sidebar`（0.15.2，
+   非本仓库出品，已发布并适配 0.1.0-rc.8 – 0.1.1-rc.2 官方 SDK cohort）与
+   `@mlgbnb/dsh-archive-manager`（1.0.7，社区插件，已发布），其版本必须已在 npm
+   上可解析，再更新 lockfile；
 5. 逐包 `pnpm pack --dry-run` 复核 tarball 内容（注意：dry-run 仍会执行
    prepack/prepare 脚本）；
 6. 发布动作前**必须**经维护者确认。

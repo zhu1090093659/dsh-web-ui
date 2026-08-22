@@ -65,10 +65,10 @@ minimumReleaseAgeExclude:
   - '@deepseek-ai/dsh-typert-protocol@0.1.1-rc.2'
   - '@deepseek-ai/dsh-user-questions@0.1.1-rc.2'
   - '@deepseek-ai/schemastery@3.18.1'
-  # The aggregate bundle pins dsh-better-sidebar at exactly 0.14.0; pnpm 11's
+  # The aggregate bundle pins dsh-better-sidebar at exactly 0.15.2; pnpm 11's
   # minimum-release-age guard must not reject the fresh version. Scoped to
   # that exact version so later upstream publishes get no cooldown bypass.
-  - 'dsh-better-sidebar@0.14.0'
+  - 'dsh-better-sidebar@0.15.2'
   # The aggregate bundle mounts @mlgbnb/dsh-archive-manager at exactly 1.0.7;
   # pnpm 11's minimum-release-age guard must not reject the fresh version.
   # Scoped to that exact version so later upstream publishes get no cooldown bypass.
